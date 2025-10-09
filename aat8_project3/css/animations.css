@@ -1,0 +1,42 @@
+.conainer-text-change {
+  display: grid;
+  place-items: center;
+}
+
+.text-change {
+  display: flex;
+  box-sizing: content-box; 
+  overflow:hidden;
+  height:3rem;
+  max-height:3rem;
+}
+
+.intro-text {
+  margin-top:-2px;
+}
+
+.role {
+  display:block;
+  height:100%;
+  padding-left:.375rem;
+}
+
+.place-role {
+  position:relative;
+  color:#e6d389;
+  animation: rolling-role 3s infinite;
+}
+
+@keyframes rolling-role {
+  15% { transform:translateY(-102%);}
+
+  35% { transform:translateY(-100%);}
+
+  50% { transform:translateY(-202%);}
+
+  70% { transform:translateY(-200%);}
+
+  85% { transform:translateY(-302%);}
+
+  100% { transform:translateY(-300%);}
+}
